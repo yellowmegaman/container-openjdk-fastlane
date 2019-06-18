@@ -29,9 +29,9 @@
         "type": "shell",
         "inline": [
           "apt-get update",
-          "apt-get install build-essential ruby ruby-dev unzip",
+          "apt-get install -y build-essential ruby ruby-dev unzip",
           "gem install fastlane -v {{user `fastlane_ver`}}",
-	  "apt-get autoremove --purge ruby-dev"
+	  "apt-get autoremove -y --purge ruby-dev"
       ]
     }
   ],
